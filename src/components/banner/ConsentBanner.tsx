@@ -3,7 +3,7 @@ import { COOKIE_KEY } from '@/constants/Consent';
 import Cookies from 'js-cookie';
 import React from 'react'
 import { ActionButton } from '../button/ActionButton';
-import { HandlerDecline } from '@/handlers/ConsentHandlers';
+import { handlerAccept, handlerDecline } from '@/lib/utils/ConsentCookie';
 
 // Make a consent component
 
@@ -48,13 +48,13 @@ export const ConsentBanner = () => {
             {/* Make decline Button */}
             <ActionButton 
                 label="Decline" 
-                onClick={()=>HandlerDecline(setVisible,setError)} // set handler for decline button
+                onClick={()=>handlerDecline(setVisible,setError)} // set handler for decline button
                 className="bg-gray-300 hover:bg-gray-400 text-black px-4 py-2 rounded"
             />
             {/* Make accept Button */}
             <ActionButton 
                 label="Accept" 
-                onClick={()=>HandlerDecline(setVisible,setError)} // set handler for accept button
+                onClick={()=>handlerAccept(setVisible,setError)} // set handler for accept button
                 className="bg-black hover:bg-white text-white hover:text-black jover:border-black px-4 py-2 rounded"
             />
         </div>

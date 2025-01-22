@@ -1,7 +1,7 @@
-import { ActionButtonProps } from "@/interface/consent";
+import { ActionButtonProps } from "@/lib/types";
 import { Button } from "@heroui/react";
 
-// Make a reusable component for button
+// Make a reusable component action button
 
 export const ActionButton: React.FC<ActionButtonProps> = ({ label, onClick, className, style }) => {
     return (
