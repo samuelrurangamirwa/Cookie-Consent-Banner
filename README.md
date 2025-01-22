@@ -23,5 +23,5 @@ This project is about creating a cookie consent banner for a Next.js application
 
 1. Open the app in your browser.
 2. The cookie consent banner will appear on your first visit.
-3. Choose to either accept or reject cookies.
+3. Choose to either accept or decline cookies.
 4. Your choice will be saved, and the banner won’t appear again unless cookies are cleared.
