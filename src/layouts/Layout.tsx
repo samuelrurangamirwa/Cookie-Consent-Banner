@@ -7,7 +7,7 @@ import { LayoutProps } from '@/interface/consent';
 export const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
     <>
-      <ConsentBanner />  // Calling consent banner component
+      <ConsentBanner />  {/* Calling consent banner component */}
       {children}
     </>
   );

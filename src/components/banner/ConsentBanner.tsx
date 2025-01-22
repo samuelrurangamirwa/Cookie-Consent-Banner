@@ -38,6 +38,11 @@ export const ConsentBanner = () => {
             <p>
                 This website uses cookies to enhance your experience. By accepting, you agree to our use of cookies.
             </p>
+            {error && (
+                <div className='text-red-500 text-sm'>
+                    {error}                             {/* Display error message */}
+                </div>
+            )}
         </div>
         <div className='flex justify-end space-x-2'>
             {/* Make decline Button */}
