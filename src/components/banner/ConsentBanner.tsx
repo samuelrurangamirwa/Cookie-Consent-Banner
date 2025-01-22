@@ -1,6 +1,4 @@
 'use client';
-import { COOKIE_KEY } from '@/constants/Consent';
-import Cookies from 'js-cookie';
 import React from 'react'
 import { ActionButton } from '../button/ActionButton';
 import { getConsentCookie, handlerAccept, handlerDecline } from '@/lib/utils/ConsentCookie';
