@@ -3,7 +3,7 @@ import { COOKIE_KEY } from '@/constants/Consent';
 import Cookies from 'js-cookie';
 import React from 'react'
 import { ActionButton } from '../button/ActionButton';
-import { handlerAccept, handlerDecline } from '@/lib/utils/ConsentCookie';
+import { getConsentCookie, handlerAccept, handlerDecline } from '@/lib/utils/ConsentCookie';
 
 // Make a consent component
 
@@ -13,7 +13,7 @@ export const ConsentBanner = () => {
 
     React.useEffect(()=>{
         try {
-            const consent = Cookies.get(COOKIE_KEY);               // get consent
+            const consent = getConsentCookie;              // get consent
             if (!consent) setVisible(true);
         } catch (error) {
             setError('Error occurred while retrieving cookie');
