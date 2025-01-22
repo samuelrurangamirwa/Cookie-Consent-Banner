@@ -1,4 +1,4 @@
-import { COOKIE_EXPIRY_DAYS, COOKIE_KEY } from '@/constants/Consent';
+import { COOKIE_EXPIRY_DAYS, COOKIE_KEY } from '@/constants/consent';
 import Cookies from 'js-cookie';
 
 // set value of consent cookie with expiration date

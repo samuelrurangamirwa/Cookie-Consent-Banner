@@ -1,7 +1,7 @@
 'use client';
 import React from 'react'
 import { ActionButton } from '../button/ActionButton';
-import { getConsentCookie, handlerAccept, handlerDecline } from '@/lib/utils/ConsentCookie';
+import { getConsentCookie, handlerAccept, handlerDecline } from '@/lib/utils/consentCookie';
 
 // Make a consent component
 
